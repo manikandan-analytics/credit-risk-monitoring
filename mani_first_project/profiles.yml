@@ -1,0 +1,14 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      project: mani-dbt-learning
+      dataset: dbt_dev
+      threads: 1
+      keyfile: null
+      location: US
+      priority: interactive
+      retries: 1
+      timeout_seconds: 300
+      method: oauth
